@@ -110,6 +110,7 @@ public class Order implements Serializable {
 		return items;
 	}
 	
+	//o postman so mostra metodos que contenham a palavra get
 	public Double getTotal() {
 		
 		double sum = 0.0;
