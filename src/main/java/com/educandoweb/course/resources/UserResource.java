@@ -43,7 +43,7 @@ public class UserResource {
 	
 	@PostMapping //serve para inserir
 	public ResponseEntity<User> insert(@RequestBody User obj) {
-	//request serve pra desierializar
+	//O corpo da requisição (JSON enviado pelo Postman), será convertido automaticamente em um objeto User
 		obj = service.insert(obj);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
 		return ResponseEntity.created(uri).body(obj);
@@ -56,7 +56,7 @@ public class UserResource {
 		return ResponseEntity.noContent().build();
 	}
 	
-	@PutMapping(value = "/{id}") //serve pra atualizar
+	@PutMapping(value = "/{id}") //O método responde a uma requisição HTTP PUT
 	public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User obj ){
 		obj = service.update(id, obj);
 		return ResponseEntity.ok().body(obj);
