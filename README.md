@@ -3,17 +3,13 @@
 
 # Sobre o projeto
 
-https://wmazoni-sds1.netlify.app
+API desenvolvida utilizando Java com Spring Boot, JPA e Hibernate durante a realização de um curso de programação Java. O projeto consiste em uma API com banco de dados H2, contendo entidades como Produto, Item do Pedido, Pedido e Usuário, além de diferentes tipos de relacionamentos entre elas, adaptados para o paradigma de orientação a objetos.
 
-Big Game Survey é uma aplicação full stack web e mobile construída durante a 1ª edição da **Semana DevSuperior** (#sds1), evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
-
-A aplicação consiste em uma pesquisa de preferência de games, onde os dados são coletados no app mobile, e depois são listados no app web, que também apresenta um dashboard com gráficos baseados nestes dados.
-
-## Layout mobile
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+A aplicação segue o padrão de arquitetura MVC, contendo as camadas Model, Controller, Service e Repository para cada entidade do sistema. Além disso, o Postman foi utilizado para realizar os testes das requisições da API.
 
 ## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
+![Modelo Conceitual](https://github.com/soleralucas/assets/blob/main/workshop-springboot4-jpa/Captura%20de%20tela%202026-05-28%20183836.png)
+![Modelo Conceitual](https://github.com/soleralucas/assets/blob/main/workshop-springboot4-jpa/Captura%20de%20tela%202026-05-28%20182005.png)
 
 # Tecnologias utilizadas
 ## Back end
@@ -31,38 +27,54 @@ A aplicação consiste em uma pesquisa de preferência de games, onde os dados s
 # Como executar o projeto
 
 ## Back end
-Pré-requisitos: Java 11
+
+Pré-requisitos:
+
+* Java 17
+* Spring Tools Suite (STS)
+* Git Bash
+
+O projeto utiliza o banco de dados H2 em memória, não sendo necessária a instalação de um banco de dados externo.
 
 ```bash
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone git@github.com:soleralucas/workshop-springboot4-jpa.git
 
-# entrar na pasta do projeto back end
-cd backend
+# entrar na pasta do projeto
+cd workshop-springboot4-jpa
+```
 
-# executar o projeto
+Após clonar o projeto, importe-o na IDE Spring Tools Suite ou a que desejar como um projeto Maven.
+
+Para executar a aplicação, utilize a própria IDE ou execute o comando abaixo no Git Bash:
+
+```bash
 ./mvnw spring-boot:run
 ```
 
-## Front end web
-Pré-requisitos: npm / yarn
+A aplicação iniciará localmente na porta padrão:
 
 ```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
-
-# entrar na pasta do projeto front end web
-cd front-web
-
-# instalar dependências
-yarn install
-
-# executar o projeto
-yarn start
+http://localhost:8080
 ```
+
+## Banco de dados H2
+
+O console do banco de dados H2 pode ser acessado pelo navegador através do link:
+
+```bash
+http://localhost:8080/h2-console
+```
+
+Por meio dele, é possível visualizar as tabelas e acompanhar as alterações realizadas no banco de dados pela aplicação.
+
+## Testes da API
+
+As requisições da API foram testadas utilizando o Postman.
+
 
 # Autor
 
-Wellington Mazoni de Andrade
+Lucas Pereira Solera
 
-https://www.linkedin.com/in/wmazoni
+https://www.linkedin.com/in/lucas-pereira-solera/
