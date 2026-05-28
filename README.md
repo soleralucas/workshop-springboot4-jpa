@@ -1,4 +1,4 @@
-# Big Game Survey 
+
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/devsuperior/sds1-wmazoni/blob/master/LICENSE) 
 
 # Sobre o projeto
@@ -70,7 +70,9 @@ Por meio dele, é possível visualizar as tabelas e acompanhar as alterações r
 
 ## Testes da API
 
-As requisições da API foram testadas utilizando o Postman.
+As requisições da API podem ser testadas utilizando o Postman, permitindo verificar o funcionamento dos endpoints e validar as funcionalidades da aplicação.
+
+Além disso, as alterações realizadas podem ser acompanhadas pelo console do banco de dados H2 através do navegador.
 
 
 # Autor
