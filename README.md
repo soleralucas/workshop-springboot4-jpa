@@ -31,7 +31,7 @@ A aplicação segue o padrão de arquitetura MVC, contendo as camadas Model, Con
 Pré-requisitos:
 
 * Java 17
-* Spring Tools Suite (STS)
+* Spring Tools Suite (STS), Eclipse ou IntelliJ
 * Git Bash
 
 O projeto utiliza o banco de dados H2 em memória, não sendo necessária a instalação de um banco de dados externo.
