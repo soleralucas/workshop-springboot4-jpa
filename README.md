@@ -28,7 +28,7 @@ A aplicação segue o padrão de arquitetura MVC, contendo as camadas Model, Con
 
 ## Pré-requisitos
 
-- Java 17
+- Java 25
 - Maven
 - Spring Tools Suite (STS), Eclipse ou IntelliJ
 
