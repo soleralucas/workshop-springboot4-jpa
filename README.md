@@ -84,6 +84,18 @@ As requisições da API podem ser testadas utilizando o Postman, permitindo vali
 
 Além disso, as alterações realizadas podem ser acompanhadas pelo console H2 através do navegador.
 
+### Exemplo de requisição
+
+Endpoint:
+
+```http
+GET /users
+```
+
+Resposta obtida através do Postman:
+
+![Exemplo de Requisição](https://github.com/soleralucas/assets/blob/main/workshop-springboot4-jpa/Captura%20de%20tela%202026-05-29%20211547.png)
+
 # Autor
 
 Lucas Pereira Solera
