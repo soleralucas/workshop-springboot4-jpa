@@ -26,54 +26,63 @@ A aplicação segue o padrão de arquitetura MVC, contendo as camadas Model, Con
 
 # Como executar o projeto
 
-## Back end
+## Pré-requisitos
 
-Pré-requisitos:
-
-* Java 17
-* Spring Tools Suite (STS), Eclipse ou IntelliJ
-* Git Bash
+- Java 17
+- Maven
+- Spring Tools Suite (STS), Eclipse ou IntelliJ
 
 O projeto utiliza o banco de dados H2 em memória, não sendo necessária a instalação de um banco de dados externo.
 
+## Clonar o repositório
+
 ```bash
-# clonar repositório
 git clone git@github.com:soleralucas/workshop-springboot4-jpa.git
 
-# entrar na pasta do projeto
 cd workshop-springboot4-jpa
 ```
 
-Após clonar o projeto, importe-o na IDE Spring Tools Suite ou a que desejar como um projeto Maven.
+## Executar a aplicação
 
-Para executar a aplicação, utilize a própria IDE ou execute o comando abaixo no Git Bash:
+Importe o projeto na IDE como um projeto Maven.
 
-```bash
-./mvnw spring-boot:run
+Em seguida, localize a classe principal da aplicação e execute:
+
+```text
+Run As → Spring Boot App
 ```
 
-A aplicação iniciará localmente na porta padrão:
+A aplicação será iniciada localmente na porta:
 
-```bash
+```text
 http://localhost:8080
 ```
 
-## Banco de dados H2
+Após a inicialização, o servidor permanecerá em execução aguardando requisições da API.
 
-O console do banco de dados H2 pode ser acessado pelo navegador através do link:
+## Console H2
 
-```bash
+O console do banco de dados pode ser acessado em:
+
+```text
 http://localhost:8080/h2-console
 ```
 
-Por meio dele, é possível visualizar as tabelas e acompanhar as alterações realizadas no banco de dados pela aplicação.
+Utilize as seguintes credenciais:
+
+```text
+JDBC URL: jdbc:h2:mem:testdb
+Usuário: sa
+Senha:
+```
+
+Por meio do console H2 é possível visualizar as tabelas e acompanhar as alterações realizadas pela aplicação.
 
 ## Testes da API
 
-As requisições da API podem ser testadas utilizando o Postman, permitindo verificar o funcionamento dos endpoints e validar as funcionalidades da aplicação.
+As requisições da API podem ser testadas utilizando o Postman, permitindo validar os endpoints e verificar o funcionamento da aplicação.
 
-Além disso, as alterações realizadas podem ser acompanhadas pelo console do banco de dados H2 através do navegador.
-
+Além disso, as alterações realizadas podem ser acompanhadas pelo console H2 através do navegador.
 
 # Autor
 
